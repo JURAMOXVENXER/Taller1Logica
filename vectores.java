@@ -24,10 +24,7 @@ public class vectores {
     public void mostrarVector() {
         if (!vectorVacio()) {
             for (int i = 0; i <= indice; i++) {
-                System.out.println("Nombre: " + vectorPersona[i].getNombre() +
-                                   ", Apellido: " + vectorPersona[i].getApellido() +
-                                   ", Peso: " + vectorPersona[i].getPeso() +
-                                   ", Altura: " + vectorPersona[i].getAltura());
+                System.out.println(vectorPersona[i]); // usa toString() de persona
             }
         } else {
             System.out.println("El vector está vacío");
