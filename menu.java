@@ -5,7 +5,7 @@ public class menu {
     private Scanner scanner;
 
     public menu() {
-        vector = new vectores(10); // vector de máximo 10 personas
+        vector = new vectores(10); 
         scanner = new Scanner(System.in);
     }
 
@@ -32,8 +32,9 @@ public class menu {
     }
 
     public void eliminarPersona() {
-        System.out.print("Posición a eliminar: ");
-        int pos = scanner.nextInt();
+        System.out.print("Digite el nombre de la persona  a eliminar: ");
+        String nom = scanner.next();
+        int pos = vector.buscarPersona(nom);
         vector.eliminarPersona(pos);
     }
 
